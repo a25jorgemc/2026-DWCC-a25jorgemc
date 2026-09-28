@@ -4,7 +4,7 @@
 // c. Indica que persoa ten o maior IMC cunha cadea similar a: 'O IMC (25.3) da
 // primeira persoa é maior que o da segunda persoa (22.5)!'
 
-const peso1 = 50;
+const peso1 = 120;
 const peso2 = 70;
 
 const altura1 = 1.52;
@@ -18,10 +18,16 @@ const IMC2 = peso2 / altura2cadrado;
 
 if (IMC1 > IMC2) {
   console.log(
-    'O IMC ' + IMC1 + ' da 1ª persoa é maior que o da segunda ' + IMC2,
+    'O IMC ' +
+      IMC1.toFixed(2) +
+      ' da 1ª persoa é maior que o da segunda ' +
+      IMC2.toFixed(2),
   );
 } else {
   console.log(
-    'O IMC ' + IMC2 + ' da 2ª persoa é maior que o da primeira ' + IMC1,
+    'O IMC ' +
+      IMC2.toFixed(2) +
+      ' da 2ª persoa é maior que o da primeira ' +
+      IMC1.toFixed(2),
   );
 }

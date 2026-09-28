@@ -8,5 +8,7 @@ function prezoFinal(prezo, porcentaxeDesconto) {
   console.log('Prezo inicial: ' + prezo);
   console.log('Porcentaxe de desconto: ' + porcentaxeDesconto);
   console.log('Prezo final: ' + prezoF);
+
+  return prezoF;
 }
 prezoFinal(5, 10);

@@ -5,5 +5,15 @@ const dia = 'Sábado';
 if (dia == 'Sábado' || dia == 'Domingo') {
   console.log(dia + ' non é laborable');
 } else {
-  console.log(dia + ' é laborable');
+  if (
+    dia == 'Luns' ||
+    dia == 'Martes' ||
+    dia == 'Mércores' ||
+    dia == 'Xoves' ||
+    dia == 'Venres'
+  ) {
+    console.log(dia + ' é laborable');
+  } else {
+    console.log('Non introduciches un día válido');
+  }
 }
