@@ -4,8 +4,11 @@
 
 function enmascarar(cadeaInicial) {
   let cadeaFinal = '';
+
   const ultimos4 = cadeaInicial.slice(-4);
+
   cadeaFinal = ultimos4.padStart(cadeaInicial.length, '*');
+
   return cadeaFinal;
 }
 

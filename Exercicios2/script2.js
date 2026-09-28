@@ -3,6 +3,7 @@
 
 function reverseString(cadeaInicial) {
   let cadeaFinal = '';
+
   for (let index = cadeaInicial.length - 1; index >= 0; index--) {
     cadeaFinal += cadeaInicial.at(index);
   }

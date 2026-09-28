@@ -9,6 +9,7 @@
 // console.log(numeroAleatorio(5, 10));
 
 const ceroCatro = Math.random() * 4;
+
 const ceroTres = Math.floor(ceroCatro);
 
 const unTres = Math.ceil(Math.random() * 3);
