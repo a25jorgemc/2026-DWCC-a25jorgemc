@@ -12,7 +12,7 @@ const ceroCatro = Math.random() * 4;
 
 const ceroTres = Math.floor(ceroCatro);
 
-const unTres = Math.ceil(Math.random() * 3);
+const unTres = Math.floor(Math.random() * 3 + 1);
 
 console.log(`Número aleatorio entre 0 e 3 (incluídos): ${ceroTres}`);
 
