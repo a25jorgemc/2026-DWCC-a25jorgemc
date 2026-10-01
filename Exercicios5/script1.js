@@ -41,37 +41,35 @@
 //       'Periscic'.Crea unha nova variable de tipo array chamada players1Final que
 // conteña todos os xogadores: os iniciais e tamén os 3 novos.
 
-
-
 // a.Crea as variables players1, players2 que conteñan un array cos xogadores
 // de cada equipo.Así, players1 terá os xogadores do primeiro equipo e
 // players2 os do segundo equipo.
 const players = [
   [
-    "Neuer",
-    "Pavard",
-    "Martinez",
-    "Alaba",
-    "Davies",
-    "Kimmich",
-    "Goretzka",
-    "Coman",
-    "Muller",
-    "Gnarby",
-    "Lewandowski",
+    'Neuer',
+    'Pavard',
+    'Martinez',
+    'Alaba',
+    'Davies',
+    'Kimmich',
+    'Goretzka',
+    'Coman',
+    'Muller',
+    'Gnarby',
+    'Lewandowski',
   ],
   [
-    "Burki",
-    "Schulz",
-    "Hummels",
-    "Akanji",
-    "Hakimi",
-    "Weigl",
-    "Witsel",
-    "Hazard",
-    "Brandt",
-    "Sancho",
-    "Gotze",
+    'Burki',
+    'Schulz',
+    'Hummels',
+    'Akanji',
+    'Hakimi',
+    'Weigl',
+    'Witsel',
+    'Hazard',
+    'Brandt',
+    'Sancho',
+    'Gotze',
   ],
 ];
 const [players1, players2] = players;
@@ -90,4 +88,4 @@ const allplayers = [...players1, ...players2];
 //'Periscic'.Crea unha nova variable de tipo array chamada players1Final que
 // conteña todos os xogadores: os iniciais e tamén os 3 novos.
 
-const players1Final = [...players1, "Thiago", "Coutinho", "Periscic"]
+const players1Final = [...players1, 'Thiago', 'Coutinho', 'Periscic'];
