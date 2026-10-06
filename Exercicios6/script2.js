@@ -10,8 +10,8 @@ const game = {
 // ● draw: debe inicializarse co valor da propiedade x do obxecto inicial.
 // ● team2: debe inicializarse co valor da propiedade team2 do obxecto inicial.
 
-const team1 = game.odds.team1;
-const draw = game.odds.x;
-const team2 = game.odds.team2;
+const {
+  odds: {team1,x:draw,team2},
+} = game;
 
 console.log(team1, ' ', draw, ' ', team2);

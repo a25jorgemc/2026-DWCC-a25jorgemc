@@ -18,11 +18,11 @@ for (const element of game.scored) {
 // Gnarby: 1, Hummels: 1}
 let scorers = {};
 
-for (const key of game.scored) {
-  if (!Object.hasOwn(scorers, key)) {
-    scorers[key] = 1;
+for (const xogador of game.scored) {
+  if (!Object.hasOwn(scorers, xogador)) {
+    scorers[xogador] = 1;
   } else {
-    scorers[key]++;
+    scorers[xogador]++;
   }
 }
 console.log(scorers);

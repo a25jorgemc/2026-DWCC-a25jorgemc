@@ -8,17 +8,10 @@ const arraycillo = ["first_name", "last_NAME"];
 let arrayNovo = [];
 
 for (const element of arraycillo) {
-  let novoElemento = element.split("_");
-  arrayNovo.push(novoElemento);
+  let [primeiro,segundo] = element.split("_");
+  segundo = segundo.toLowerCase();
+  segundo = segundo[0].toUpperCase()+segundo.slice(1);
+
+  arrayNovo.push(primeiro+segundo)
 }
-
-for (let index = 0; index < arrayNovo.length; index++) {
-  arrayNovo[index][1] = arrayNovo[index][1].toLowerCase();
-
-  arrayNovo[index][1] = arrayNovo[index][1][0].toUpperCase() + arrayNovo[index][1].slice(1);
-
-  arrayNovo[index] = arrayNovo[index].join("");
-
-}
-
 console.log(arrayNovo);
