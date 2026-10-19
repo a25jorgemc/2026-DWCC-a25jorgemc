@@ -37,7 +37,7 @@ const data = [
 
 
 
-function reducer(accumulator, currentValue, index, array) {
+function reducer(accumulator, currentValue) {
 
     if (!Object.hasOwn(accumulator, currentValue)) {
         accumulator[currentValue] = 1;
