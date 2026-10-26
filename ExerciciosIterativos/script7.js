@@ -78,7 +78,7 @@ console.log(ordenadoData);
 // f. Calcula a suma dos anos que viviron todos os inventores.
 
 function reducer(accumulator, currentValue) {
-    accumulator += currentValue.year;
+    accumulator += currentValue.passed - currentValue.year;
 
     return accumulator;
 }
