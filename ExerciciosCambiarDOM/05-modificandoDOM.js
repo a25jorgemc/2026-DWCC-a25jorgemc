@@ -2,14 +2,14 @@
 
 // Engade a clase CSS "color-title" ao elemento con id "tituloPrincipal" 
 const titulo = document.getElementById("tituloPrincipal");
-titulo.classList = "color-title";
+titulo.classList.add("color-title");
 
 // Crea un novo elemento <li> coa clase CSS "item-lista" e o texto "Item 5". Engade este elemento á lista desordenada
 const ul = document.querySelector("ul");
 const li = document.createElement("li");
 const texto = document.createTextNode("Item 5");
 li.append(texto);
-li.classList = "item-lista";
+li.classList("item-lista");
 ul.append(li);
 
 // Modifica o ancho do div con id "contedor" a 800px usando JavaScript 
