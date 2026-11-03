@@ -1,5 +1,5 @@
 
-const pBoton = document.querySelector("p");
+const pBoton = document.querySelector("span");
 
 function mostrarLista() {
     const elLista = document.querySelectorAll("li");
