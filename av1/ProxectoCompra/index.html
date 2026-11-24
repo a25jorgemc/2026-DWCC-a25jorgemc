@@ -5,21 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista compra</title>
+    <style>
+        span {
+            cursor: pointer;
+        }
+
+        .colorear {
+            color: red;
+        }
+
+        .oculto {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Lista compra</h1>
     <form>
         <input placeholder="Introduce un elemento" type="text" id="texto" name="texto">
-        <button type="button">+ Engadir elemento</button>
+        <button type="button" id="engadir">+ Engadir elemento</button>
         <br><br>
         <input type="text" id="buscador" name="buscador" placeholder="Filter items">
     </form>
     <ul id="ul">
-        <li>Zapatos <button>x</button> </li>
-        <li>Cafe <button>x</button> </li>
-        <li>Mango <button>x</button> </li>
+
     </ul>
+    <button id="borrarTodo">Borrar todo</button>
     <script src="script.js" defer="defer"></script>
 </body>
 

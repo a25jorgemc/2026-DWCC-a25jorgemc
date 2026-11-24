@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="leaflet.css" />
+    <script type="importmap">
+{
+"imports": {
+"leaflet": "./leaflet.js"
+}
+}
+</script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #contenedorLista {
+            width: 30%;
+        }
+
+        #map {
+            width: 70%;
+            height: 100%;
+        }
+
+        .oculto {
+            display: none;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 60%;
+        }
+
+        #botonEngadir {
+            width: 50%;
+        }
+
+        li:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedorLista">
+        <h1>Puntos marcados:</h1>
+        <form class="oculto" id="formulario">
+            <label for="punto">Nome:</label>
+            <input type="text" id="punto" class="punto">
+            <button type="submit" id="botonEngadir">Engadir</button>
+        </form>
+        <ul id="lista">
+
+        </ul>
+    </div>
+    <div id="map"></div>
+    <script type="module" src="script2.js"></script>
+</body>
+
+</html>
