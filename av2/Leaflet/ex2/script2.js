@@ -64,11 +64,12 @@ function engadirPunto(e) {
             lng: lng
         };
 
-        arrayPuntos.push(obxectoCoord);
 
         let marker = new Marker([lat, lng]).addTo(map);
         marker.bindPopup(obxectoCoord.nome);
 
+        obxectoCoord["marcador"]=marker;
+        arrayPuntos.push(obxectoCoord);
         formulario.classList.add("oculto");
         inputTexto.value = "";
 
@@ -87,7 +88,9 @@ function engadirPunto(e) {
 
     }
 }
-
+function gardarLocalStorage() {
+    
+}
 function centrarPopupEliminar(e) {
     if (e.target.tagName == "SPAN") {
         for (const element of arrayPuntos) {
@@ -97,7 +100,16 @@ function centrarPopupEliminar(e) {
         }
     }
     if (e.target.tagName == "BUTTON") {
-        e.target.parentElement.remove();
+        const li = e.target.parentElement;
+        const nomePunto = li.querySelector("span").textContent;
+        const indice = arrayPuntos.findIndex(p=>p.nome===nomePunto);
+        
+        if (indice!=-1) {
+            map.removeLayer(arrayPuntos[indice].marcador);
+            arrayPuntos.splice(indice,1);
+            li.remove();
+        }
+
     }
 
 }
